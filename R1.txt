@@ -1,0 +1,122 @@
+/******************************************************************************
+
+Realizar una calculadora de resistencia equivalente, 
+donde el usuario determine si el arreglo de resistencias está conectado en:
+Serie               Paralelo
+La computadora preguntará 10 valores de resistencia a considerar (tanto serie como en paralelo)  
+se calculara o descartara el valor introducido segun sea necesario.
+
+Si el usuario introduce un valor de 0, como magnitud resistiva el programa deberá descartar ese valor en el cálculo.
+
+*******************************************************************************/
+#include <stdio.h>
+#include <math.h>
+#include<stdlib.h>
+
+int main()
+{
+    float R1,R2,R3,R4,R5,R6,R7,R8,R9,R10;
+    float ReqPa,ReqSe, TA;  //TA=Tipo de arreglo
+    
+    printf("Indique si el arreglo de resistencias es en: ");
+    printf("\n  1. Paralelo");
+    printf("\n  2. Serie\n");
+    
+    ReqPa=((1/R1)+(1/R2)+(1/R3)+(1/R4)+(1/R5)+(1/R6)+(1/R7)+(1/R8)+(1/R9)+(1/R10));
+    ReqPa=((1)/(ReqPa));
+    
+    ReqSe=(R1+R2+R3+R4+R5+R6+R7+R8+R9+R10);
+    
+    
+    scanf("\n\n%f", &TA);
+    if(TA == 1 ){
+        printf("Introduzca el valor de cada resistencia para");
+            printf("\ncalcular al resistencia equivalenet en paralelo\n");
+
+    printf("\nValor resistencia 1: ");
+    scanf("\n%f", &R1);
+    
+    printf("\nValor resistencia 2: ");
+    scanf("\n%f", &R2);
+    
+    printf("\nValor resistencia 3: ");
+    scanf("\n%f", &R3);
+    
+    printf("\nValor resistencia 4: ");
+    scanf("\n%f", &R4);
+    
+    printf("\nValor resistencia 5: ");
+    scanf("\n%f", &R5);
+    
+    printf("\nValor resistencia 6: ");
+    scanf("\n%f", &R6);
+    
+    printf("\nValor resistencia 7: ");
+    scanf("\n%f", &R7);
+    
+    printf("\nValor resistencia 8: ");
+    scanf("\n%f", &R8);
+    
+    printf("\nValor resistencia 9: ");
+    scanf("\n%f", &R9);
+    
+    printf("\nValor resistencia 10: ");
+    scanf("\n%f", &R10);
+    
+    ReqPa=((1/R1)+(1/R2)+(1/R3)+(1/R4)+(1/R5)+(1/R6)+(1/R7)+(1/R8)+(1/R9)+(1/R10));
+    ReqPa=((1)/(ReqPa));
+    
+
+    printf("\nValor de resistencia en %f paralelo es: ", ReqPa);
+    
+    }else if(TA == 2 ){
+        printf("Introduzca el valor de cada resistencia para");
+    printf("\ncalcular al resistencia equivalenet en serie\n");
+    printf("\nValor resistencia 1: ");
+    scanf("\n%f", &R1);
+    
+    printf("\nValor resistencia 2: ");
+    scanf("\n%f", &R2);
+    
+    printf("\nValor resistencia 3: ");
+    scanf("\n%f", &R3);
+    
+    printf("\nValor resistencia 4: ");
+    scanf("\n%f", &R4);
+    
+    printf("\nValor resistencia 5: ");
+    scanf("\n%f", &R5);
+    
+    printf("\nValor resistencia 6: ");
+    scanf("\n%f", &R6);
+    
+    printf("\nValor resistencia 7: ");
+    scanf("\n%f", &R7);
+    
+    printf("\nValor resistencia 8: ");
+    scanf("\n%f", &R8);
+    
+    printf("\nValor resistencia 9: ");
+    scanf("\n%f", &R9);
+    
+    printf("\nValor resistencia 10: ");
+    scanf("\n%f", &R10);
+    
+    ReqSe=(R1+R2+R3+R4+R5+R6+R7+R8+R9+R10);
+
+    
+    printf("\nValor de resistencia en %f serie es: ", ReqSe);
+    
+    }
+    
+
+
+    
+
+    
+    
+    return 0;
+}
+
+
+
